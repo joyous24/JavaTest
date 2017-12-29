@@ -1,6 +1,5 @@
-package main.com.test.SerializableTest;
+package com.test.SerializableTest;
 
-import com.sun.org.apache.xpath.internal.operations.Bool;
 
 import java.io.*;
 
@@ -13,7 +12,9 @@ public class PersonTest implements Serializable {
     private Integer age;
 
     private Integer sex;
-    private Integer sex1;
+
+    //sex1内容不序列化到本地
+    private transient Integer sex1;
 
     public Integer getAge() {
         return age;
@@ -33,10 +34,11 @@ public class PersonTest implements Serializable {
 
     public static void main(String[] args) {
         //测试开关
-        Boolean serialBoll = false;
+        Boolean serialBoll = true;
 
         PersonTest personTest = new PersonTest();
         personTest.setName("测试序列化");
+        personTest.sex1 = 2;
 
         File outFile = new File("D://personTest.text");
         try {
@@ -60,6 +62,7 @@ public class PersonTest implements Serializable {
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
+
 
     }
 }
