@@ -1,4 +1,4 @@
-package com.test.SerializableTest;
+package com.test.serializableTest;
 
 
 import java.io.*;

@@ -1,9 +1,4 @@
-package com.test.SerializableTest;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+package com.test.serializableTest;
 
 public class ListTest {
 
