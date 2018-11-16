@@ -20,7 +20,7 @@ public class NIOTest {
             ByteBuffer buffer = ByteBuffer.allocate(1024);
             int count;
             do {
-                count = channel.read(buffer);
+                count = channel.read(buffer);h
                 if (count == -1) break;
 
                 buffer.rewind();
