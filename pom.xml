@@ -38,6 +38,18 @@
             <artifactId>jackson-dataformat-xml</artifactId>
             <version>2.7.4</version>
         </dependency>
+        <dependency>
+            <groupId>com.zhen</groupId>
+            <artifactId>zhen-common</artifactId>
+            <version>1.0.0</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.zhen</groupId>
+            <artifactId>zhen-integrate</artifactId>
+            <version>1.0.0</version>
+            <scope>compile</scope>
+        </dependency>
 
     </dependencies>
     <build>
