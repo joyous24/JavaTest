@@ -192,6 +192,68 @@ public class Test {
         System.out.println(md5);
     }
 
+    public static void main25(String[] args) {
+        long number = 345L;
+        long number2 = 0345;
+        long number3 = 0345L;
+        long number4 = 0x345L;
+
+
+        System.out.println(number);
+
+    }
+
+    public static void main26(String[] args) {
+        String str = "";
+        for (int i = 0; i <= 5; i++) {
+            if (i < 3) {
+                str += "+";
+            } else {
+                String newStr = str.replace("+", "=");
+                newStr += "=";
+                str = newStr;
+            }
+
+            System.out.println(i + str);
+        }
+    }
+
+
+    public static void main27(String[] args) {
+        int[] arr = {3, 6, 22, 11, 4, 7, 1, 9};
+        for (int i = 0; i < arr.length - 1; i++) {
+            for (int j = 0; j < arr.length - 1 - i; j++) {
+                if (arr[j] > arr[j + 1]) {
+                    int temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                }
+            }
+        }
+
+        for (int num : arr) {
+            System.out.print(num + " ");
+        }
+    }
+
+    public static void main28(String[] args) {
+        for (int i = 100; i <= 999; i++) {
+            int a = i / 100;
+            int b = i % 100 / 10;
+            int c = i % 10;
+            if (a * a * a + b * b * b + c * c * c == i) {
+                System.out.println("水仙花数=" + i);
+            }
+        }
+    }
+
+
+    public static void main(String[] args) {
+        String zpSource = "2";
+        String sourceContains = "16,31,32,24,29,27,30,";
+        if (StringHelper.contains(sourceContains, zpSource + ",")) {
+        }
+    }
 
 
 }
