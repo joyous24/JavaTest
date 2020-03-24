@@ -3,6 +3,11 @@ package com.test.serializable;
 
 import java.io.*;
 
+/**
+ * 序列化测试用例
+ *
+ * @author zxq
+ */
 public class PersonTest implements Serializable {
 
     private static final long serialVersionUID = 1614918028946841050L;
