@@ -5,13 +5,13 @@ import com.fasterxml.jackson.annotation.JsonRootName;
 @JsonRootName("CatDto")
 public class CatDto {
 
-    private CatUserInfo UserInfo;
+    private com.test.jackson.CatUserInfo UserInfo;
 
-    public CatUserInfo getUserInfo() {
+    public com.test.jackson.CatUserInfo getUserInfo() {
         return UserInfo;
     }
 
-    public void setUserInfo(CatUserInfo userInfo) {
+    public void setUserInfo(com.test.jackson.CatUserInfo userInfo) {
         UserInfo = userInfo;
     }
 }

@@ -7,13 +7,13 @@ import com.fasterxml.jackson.annotation.JsonRootName;
 public class CatReturnCatDto {
 
     @JsonProperty("Return")
-    private CatReturn catReturn;
+    private com.test.jackson.CatReturn catReturn;
 
-    public CatReturn getCatReturn() {
+    public com.test.jackson.CatReturn getCatReturn() {
         return catReturn;
     }
 
-    public void setCatReturn(CatReturn catReturn) {
+    public void setCatReturn(com.test.jackson.CatReturn catReturn) {
         this.catReturn = catReturn;
     }
 }

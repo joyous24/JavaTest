@@ -23,7 +23,7 @@ public class JacksonTest {
 
         String xml = "<?xml version=\"1.0\" encoding=\"UTF-8\"?><CAT><Return><Success>Y</Success><ErrMessage></ErrMessage></Return></CAT>";
         ObjectMapper mapper = new XmlMapper();
-        CatReturnCatDto dto =  mapper.readValue(xml, CatReturnCatDto.class);
+        com.test.jackson.CatReturnCatDto dto =  mapper.readValue(xml, com.test.jackson.CatReturnCatDto.class);
     }
 
 
