@@ -1,11 +1,7 @@
-package test.lambad;
+package com.test.lambad;
 
-import java.math.BigDecimal;
-import java.math.RoundingMode;
-import java.util.HashMap;
 import java.util.Map;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import java.util.TreeMap;
 
 /**
  * lambda表达式测试用例
@@ -13,6 +9,22 @@ import java.util.regex.Pattern;
  * @author zxq
  */
 public class LambdaTest {
+    public static void main(String[] args) {
+        Map<String, String> map = new TreeMap();
+        map.put("alpha", "X");
+        map.put("bravo", "Y");
+        map.put("charlie", "Z");
+
+        String str = "alpha-bravo-charlie";
+        map.replaceAll(str::replace);
+
+        map.forEach((k, v) -> System.out.println("K=" + k + ",V=" + v));
+
+//输出结果：
+//        K=alpha,V=X-bravo-carlle
+//        K=bravo,V=alpha-Y-carlle
+//        K=charlie,V=alpha-bravo-Z
+    }
 
 
 }
