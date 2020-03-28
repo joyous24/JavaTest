@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>java.zxq.test</groupId>
     <artifactId>java-test</artifactId>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
     <version>1.0-SNAPSHOT</version>
     <name>java-test Maven Webapp</name>
     <url>http://maven.apache.org</url>
@@ -39,23 +39,12 @@
             <version>2.7.4</version>
         </dependency>
         <dependency>
-            <groupId>com.zhen</groupId>
-            <artifactId>zhen-common</artifactId>
-            <version>1.0.0</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.zhen</groupId>
-            <artifactId>zhen-integrate</artifactId>
-            <version>1.0.0</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
             <groupId>com.rabbitmq</groupId>
             <artifactId>amqp-client</artifactId>
             <version>5.7.2</version>
         </dependency>
     </dependencies>
+
     <build>
         <finalName>java-test</finalName>
         <plugins>

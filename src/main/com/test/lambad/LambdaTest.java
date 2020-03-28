@@ -13,7 +13,7 @@ public class LambdaTest {
         Map<String, String> map = new TreeMap();
         map.put("alpha", "X");
         map.put("bravo", "Y");
-        map.put("charlie", "Z");
+           map.put("charlie", "Z");
 
         String str = "alpha-bravo-charlie";
         map.replaceAll(str::replace);
